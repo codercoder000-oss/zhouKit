@@ -1,7 +1,7 @@
 // [C2] 干员卡片组件 - 展示干员基本信息
 
 import Link from "next/link";
-import { Card, CardContent } from "@/components/ui";
+import { Card, CardContent, EntityImage } from "@/components/ui";
 import { Badge } from "@/components/ui";
 import type { Operator, OperatorRole } from "@/types/operator.types";
 import { OperatorRoleLabels } from "@/types/operator.types";
@@ -62,19 +62,16 @@ export function OperatorCard({ operator }: OperatorCardProps) {
         className="h-full cursor-pointer transition-all duration-200 group-hover:-translate-y-1 group-hover:border-accent/50 group-hover:shadow-lg group-hover:shadow-accent/10"
       >
         <CardContent className="p-4">
-          {/* [C2] 头像区域 */}
-          <div className={`relative aspect-square mb-3 rounded-lg overflow-hidden bg-surface-light bg-gradient-to-b ${roleGradient}`}>
-            {operator.imageUrl ? (
-              <img
-                src={operator.imageUrl}
-                alt={operator.name}
-                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-              />
-            ) : (
-              <div className="w-full h-full flex items-center justify-center text-text-secondary">
-                <span className="text-4xl">👤</span>
-              </div>
-            )}
+          {/* [优化] 头像区域 - 真实图片+智能占位 */}
+          <div className="relative aspect-square mb-3 rounded-lg overflow-hidden">
+            <EntityImage
+              src={operator.imageUrl}
+              alt={operator.name}
+              type="operator"
+              name={operator.name}
+              className={`h-full w-full bg-gradient-to-b ${roleGradient}`}
+              imgClassName="transition-transform duration-300 group-hover:scale-105"
+            />
             {/* [C2] 角色类型徽章 - 使用对应颜色 */}
             <div className="absolute top-2 right-2">
               <Badge
@@ -86,7 +83,7 @@ export function OperatorCard({ operator }: OperatorCardProps) {
               </Badge>
             </div>
             {/* [C2] Hover 时显示的遮罩 */}
-            <div className="absolute inset-0 bg-accent/0 group-hover:bg-accent/10 transition-colors duration-200" />
+            <div className="absolute inset-0 bg-accent/0 group-hover:bg-accent/10 transition-colors duration-200 pointer-events-none" />
           </div>
 
           {/* [C2] 信息区域 */}

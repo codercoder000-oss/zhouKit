@@ -38,3 +38,7 @@ export {
   GridSkeleton,
   DetailSkeleton,
 } from "./Skeleton";
+
+// [优化] 智能实体图片组件
+export { EntityImage } from "./EntityImage";
+export type { EntityType } from "./EntityImage";

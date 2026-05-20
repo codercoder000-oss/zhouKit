@@ -1,7 +1,7 @@
 // [B2] 武器卡片组件 - 增强版
 
 import Link from "next/link";
-import { Badge } from "@/components/ui";
+import { Badge, EntityImage } from "@/components/ui";
 import { WeaponCategoryLabels, WeaponTier } from "@/types/weapon.types";
 import type { Weapon } from "@/types/weapon.types";
 import { cn } from "@/lib/utils";
@@ -33,24 +33,16 @@ export function WeaponCard({ weapon }: WeaponCardProps) {
   return (
     <Link href={`/weapons/${weapon.id}`}>
       <div className="group relative overflow-hidden rounded-lg border border-surface bg-surface transition-all duration-200 hover:scale-[1.02] hover:border-accent/50 hover:shadow-lg">
-        {/* [B2] 武器图片 - 使用主题色 */}
-        <div className="relative aspect-video overflow-hidden bg-surface-light">
-          <div className="absolute inset-0 flex items-center justify-center text-text-muted">
-            {/* [B2] 占位图，实际项目中使用真实图片 */}
-            <svg
-              className="h-16 w-16 transition-transform duration-200 group-hover:scale-110"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={1.5}
-                d="M6 18L18 6M6 6l12 12"
-              />
-            </svg>
-          </div>
+        {/* [优化] 武器图片 - 真实图片+智能占位 */}
+        <div className="relative">
+          <EntityImage
+            src={weapon.imageUrl}
+            alt={weapon.name}
+            type="weapon"
+            name={weapon.name}
+            className="aspect-video"
+            imgClassName="transition-transform duration-200 group-hover:scale-105"
+          />
           {/* [B2] 评级徽章 - 使用主题色 */}
           <Badge
             className={cn(

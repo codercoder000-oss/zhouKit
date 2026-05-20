@@ -1,7 +1,7 @@
 // [B2] 地图卡片组件 - 增强版
 
 import Link from "next/link";
-import { Badge } from "@/components/ui";
+import { Badge, EntityImage } from "@/components/ui";
 import type { GameMap, MapSize } from "@/types/map.types";
 import { cn } from "@/lib/utils";
 
@@ -40,24 +40,16 @@ export function MapCard({ map }: MapCardProps) {
   return (
     <Link href={`/maps/${map.id}`}>
       <div className="group relative overflow-hidden rounded-lg border border-surface bg-surface transition-all duration-200 hover:scale-[1.02] hover:border-accent/50 hover:shadow-lg">
-        {/* [B2] 地图图片 - 使用主题色 */}
-        <div className="relative aspect-video overflow-hidden bg-surface-light">
-          <div className="absolute inset-0 flex items-center justify-center text-text-muted">
-            {/* [B2] 占位图 */}
-            <svg
-              className="h-16 w-16 transition-transform duration-200 group-hover:scale-110"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={1.5}
-                d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0121 18.382V7.618a1 1 0 00-.553-.894L15 7m0 13V7"
-              />
-            </svg>
-          </div>
+        {/* [优化] 地图图片 - 真实图片+智能占位 */}
+        <div className="relative">
+          <EntityImage
+            src={map.imageUrl}
+            alt={map.name}
+            type="map"
+            name={map.name}
+            className="aspect-video"
+            imgClassName="transition-transform duration-200 group-hover:scale-105"
+          />
           {/* [B2] 大小标识 - 使用主题色 */}
           <div
             className={cn(
