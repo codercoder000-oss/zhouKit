@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /_next/
+
+Sitemap: https://codercoder000-oss.github.io/zhouKit/sitemap.xml
