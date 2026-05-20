@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a2332"/>
+      <stop offset="100%" style="stop-color:#0f1419"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg)"/>
+  <text x="200" y="240" text-anchor="middle" fill="#3B82F6" font-size="16" font-family="sans-serif">红狼</text>
+  <text x="200" y="140" text-anchor="middle" fill="#3B82F6" font-size="80" font-family="sans-serif" opacity="0.3">红</text>
+  <path d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" transform="translate(176, 80) scale(2)" fill="none" stroke="#3B82F6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.5"/>
+</svg>

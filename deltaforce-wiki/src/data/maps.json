@@ -5,22 +5,96 @@
       "name": "零号大坝",
       "nameEn": "Zero Dam",
       "description": "大型水电站设施，是全面战争模式的主战场。地形复杂，包含室内外多个战斗区域。",
-      "imageUrl": "/images/maps/zero-dam-overview.webp",
-      "mapImageUrl": "/images/maps/zero-dam-map.webp",
+      "imageUrl": "/images/maps/zero-dam-overview.svg",
+      "mapImageUrl": "/images/maps/zero-dam-map.svg",
       "size": "large",
       "playerCount": "32v32",
-      "mode": ["全面战争", "征服", "突破"],
+      "mode": [
+        "全面战争",
+        "征服",
+        "突破"
+      ],
       "markers": [
-        { "id": "1", "type": "spawn", "label": "进攻方出生点", "description": "进攻方初始出生位置", "x": 50, "y": 95 },
-        { "id": "2", "type": "spawn", "label": "防守方出生点", "description": "防守方初始出生位置", "x": 50, "y": 5 },
-        { "id": "3", "type": "extract", "label": "A点 - 主控室", "description": "地图中央的关键控制点", "x": 50, "y": 50 },
-        { "id": "4", "type": "extract", "label": "B点 - 发电机房", "description": "重要的侧翼控制点", "x": 25, "y": 35 },
-        { "id": "5", "type": "extract", "label": "C点 - 水闸控制室", "description": "地势较高的控制点，视野开阔", "x": 75, "y": 35 },
-        { "id": "6", "type": "loot", "label": "武器箱", "description": "高级武器刷新点", "x": 40, "y": 45 },
-        { "id": "7", "type": "loot", "label": "弹药补给", "description": "弹药补给点", "x": 60, "y": 45 },
-        { "id": "8", "type": "danger", "label": "狙击点位", "description": "敌方狙击手常出没的区域", "x": 85, "y": 25 },
-        { "id": "9", "type": "camp", "label": "常用蹲点", "description": "敌人经常埋伏的位置", "x": 15, "y": 65 },
-        { "id": "10", "type": "boss", "label": "指挥官刷新点", "description": "指挥官AI刷新位置", "x": 50, "y": 30 }
+        {
+          "id": "1",
+          "type": "spawn",
+          "label": "进攻方出生点",
+          "description": "进攻方初始出生位置",
+          "x": 50,
+          "y": 95
+        },
+        {
+          "id": "2",
+          "type": "spawn",
+          "label": "防守方出生点",
+          "description": "防守方初始出生位置",
+          "x": 50,
+          "y": 5
+        },
+        {
+          "id": "3",
+          "type": "extract",
+          "label": "A点 - 主控室",
+          "description": "地图中央的关键控制点",
+          "x": 50,
+          "y": 50
+        },
+        {
+          "id": "4",
+          "type": "extract",
+          "label": "B点 - 发电机房",
+          "description": "重要的侧翼控制点",
+          "x": 25,
+          "y": 35
+        },
+        {
+          "id": "5",
+          "type": "extract",
+          "label": "C点 - 水闸控制室",
+          "description": "地势较高的控制点，视野开阔",
+          "x": 75,
+          "y": 35
+        },
+        {
+          "id": "6",
+          "type": "loot",
+          "label": "武器箱",
+          "description": "高级武器刷新点",
+          "x": 40,
+          "y": 45
+        },
+        {
+          "id": "7",
+          "type": "loot",
+          "label": "弹药补给",
+          "description": "弹药补给点",
+          "x": 60,
+          "y": 45
+        },
+        {
+          "id": "8",
+          "type": "danger",
+          "label": "狙击点位",
+          "description": "敌方狙击手常出没的区域",
+          "x": 85,
+          "y": 25
+        },
+        {
+          "id": "9",
+          "type": "camp",
+          "label": "常用蹲点",
+          "description": "敌人经常埋伏的位置",
+          "x": 15,
+          "y": 65
+        },
+        {
+          "id": "10",
+          "type": "boss",
+          "label": "指挥官刷新点",
+          "description": "指挥官AI刷新位置",
+          "x": 50,
+          "y": 30
+        }
       ],
       "tips": [
         "控制制高点可以获得视野优势",
@@ -34,21 +108,87 @@
       "name": "长弓溪谷",
       "nameEn": "Longbow Valley",
       "description": "风景优美的溪谷地形，植被茂密，是危险行动模式的理想战场。",
-      "imageUrl": "/images/maps/longbow-valley-overview.webp",
-      "mapImageUrl": "/images/maps/longbow-valley-map.webp",
+      "imageUrl": "/images/maps/longbow-valley-overview.svg",
+      "mapImageUrl": "/images/maps/longbow-valley-map.svg",
       "size": "medium",
       "playerCount": "3人小队",
-      "mode": ["危险行动", "搜索与摧毁"],
+      "mode": [
+        "危险行动",
+        "搜索与摧毁"
+      ],
       "markers": [
-        { "id": "1", "type": "spawn", "label": "撤离直升机", "description": "任务完成后在此撤离", "x": 20, "y": 80 },
-        { "id": "2", "type": "extract", "label": "地下通道入口", "description": "通往地下设施的入口", "x": 60, "y": 40 },
-        { "id": "3", "type": "loot", "label": "高级物资点", "description": "高级装备刷新位置", "x": 75, "y": 25 },
-        { "id": "4", "type": "loot", "label": "武器箱", "description": "武器补给点", "x": 35, "y": 60 },
-        { "id": "5", "type": "loot", "label": "医疗物资", "description": "医疗用品刷新点", "x": 45, "y": 50 },
-        { "id": "6", "type": "boss", "label": "Boss营地", "description": "Boss刷新位置，有大量守卫", "x": 70, "y": 30 },
-        { "id": "7", "type": "danger", "label": "雷区", "description": "危险区域，注意地雷", "x": 55, "y": 70 },
-        { "id": "8", "type": "camp", "label": "狙击高地", "description": "敌方狙击手常用位置", "x": 85, "y": 15 },
-        { "id": "9", "type": "quest", "label": "任务目标", "description": "主线任务目标位置", "x": 50, "y": 35 }
+        {
+          "id": "1",
+          "type": "spawn",
+          "label": "撤离直升机",
+          "description": "任务完成后在此撤离",
+          "x": 20,
+          "y": 80
+        },
+        {
+          "id": "2",
+          "type": "extract",
+          "label": "地下通道入口",
+          "description": "通往地下设施的入口",
+          "x": 60,
+          "y": 40
+        },
+        {
+          "id": "3",
+          "type": "loot",
+          "label": "高级物资点",
+          "description": "高级装备刷新位置",
+          "x": 75,
+          "y": 25
+        },
+        {
+          "id": "4",
+          "type": "loot",
+          "label": "武器箱",
+          "description": "武器补给点",
+          "x": 35,
+          "y": 60
+        },
+        {
+          "id": "5",
+          "type": "loot",
+          "label": "医疗物资",
+          "description": "医疗用品刷新点",
+          "x": 45,
+          "y": 50
+        },
+        {
+          "id": "6",
+          "type": "boss",
+          "label": "Boss营地",
+          "description": "Boss刷新位置，有大量守卫",
+          "x": 70,
+          "y": 30
+        },
+        {
+          "id": "7",
+          "type": "danger",
+          "label": "雷区",
+          "description": "危险区域，注意地雷",
+          "x": 55,
+          "y": 70
+        },
+        {
+          "id": "8",
+          "type": "camp",
+          "label": "狙击高地",
+          "description": "敌方狙击手常用位置",
+          "x": 85,
+          "y": 15
+        },
+        {
+          "id": "9",
+          "type": "quest",
+          "label": "任务目标",
+          "description": "主线任务目标位置",
+          "x": 50,
+          "y": 35
+        }
       ],
       "tips": [
         "利用植被掩护进行潜行",
@@ -62,22 +202,95 @@
       "name": "巴克什",
       "nameEn": "Barkhesh",
       "description": "中东风格的城镇地图，建筑密集，巷战频发。",
-      "imageUrl": "/images/maps/barkhesh-overview.webp",
-      "mapImageUrl": "/images/maps/barkhesh-map.webp",
+      "imageUrl": "/images/maps/barkhesh-overview.svg",
+      "mapImageUrl": "/images/maps/barkhesh-map.svg",
       "size": "medium",
       "playerCount": "3人小队",
-      "mode": ["危险行动", "团队死斗"],
+      "mode": [
+        "危险行动",
+        "团队死斗"
+      ],
       "markers": [
-        { "id": "1", "type": "spawn", "label": "撤离点A", "description": "北侧撤离点", "x": 50, "y": 10 },
-        { "id": "2", "type": "spawn", "label": "撤离点B", "description": "南侧撤离点", "x": 50, "y": 90 },
-        { "id": "3", "type": "extract", "label": "集市", "description": "地图中心的重要区域", "x": 50, "y": 50 },
-        { "id": "4", "type": "loot", "label": "军械库", "description": "武器和装备刷新点", "x": 30, "y": 30 },
-        { "id": "5", "type": "loot", "label": "医疗站", "description": "医疗物资刷新点", "x": 70, "y": 70 },
-        { "id": "6", "type": "loot", "label": "藏匿点", "description": "隐藏物资点", "x": 25, "y": 75 },
-        { "id": "7", "type": "boss", "label": "军阀据点", "description": "军阀Boss刷新点", "x": 75, "y": 25 },
-        { "id": "8", "type": "danger", "label": "狙击楼", "description": "高层建筑物，狙击手常出现", "x": 60, "y": 60 },
-        { "id": "9", "type": "camp", "label": "暗巷", "description": "狭窄的巷道，容易遭遇埋伏", "x": 40, "y": 40 },
-        { "id": "10", "type": "quest", "label": "情报点", "description": "任务情报收集点", "x": 55, "y": 45 }
+        {
+          "id": "1",
+          "type": "spawn",
+          "label": "撤离点A",
+          "description": "北侧撤离点",
+          "x": 50,
+          "y": 10
+        },
+        {
+          "id": "2",
+          "type": "spawn",
+          "label": "撤离点B",
+          "description": "南侧撤离点",
+          "x": 50,
+          "y": 90
+        },
+        {
+          "id": "3",
+          "type": "extract",
+          "label": "集市",
+          "description": "地图中心的重要区域",
+          "x": 50,
+          "y": 50
+        },
+        {
+          "id": "4",
+          "type": "loot",
+          "label": "军械库",
+          "description": "武器和装备刷新点",
+          "x": 30,
+          "y": 30
+        },
+        {
+          "id": "5",
+          "type": "loot",
+          "label": "医疗站",
+          "description": "医疗物资刷新点",
+          "x": 70,
+          "y": 70
+        },
+        {
+          "id": "6",
+          "type": "loot",
+          "label": "藏匿点",
+          "description": "隐藏物资点",
+          "x": 25,
+          "y": 75
+        },
+        {
+          "id": "7",
+          "type": "boss",
+          "label": "军阀据点",
+          "description": "军阀Boss刷新点",
+          "x": 75,
+          "y": 25
+        },
+        {
+          "id": "8",
+          "type": "danger",
+          "label": "狙击楼",
+          "description": "高层建筑物，狙击手常出现",
+          "x": 60,
+          "y": 60
+        },
+        {
+          "id": "9",
+          "type": "camp",
+          "label": "暗巷",
+          "description": "狭窄的巷道，容易遭遇埋伏",
+          "x": 40,
+          "y": 40
+        },
+        {
+          "id": "10",
+          "type": "quest",
+          "label": "情报点",
+          "description": "任务情报收集点",
+          "x": 55,
+          "y": 45
+        }
       ],
       "tips": [
         "建筑物屋顶是观察和狙击的好位置",
@@ -91,23 +304,104 @@
       "name": "航天基地",
       "nameEn": "Space Center",
       "description": "现代化航天发射基地，拥有巨大的火箭发射塔和发射控制中心。",
-      "imageUrl": "/images/maps/space-center-overview.webp",
-      "mapImageUrl": "/images/maps/space-center-map.webp",
+      "imageUrl": "/images/maps/space-center-overview.svg",
+      "mapImageUrl": "/images/maps/space-center-map.svg",
       "size": "large",
       "playerCount": "32v32",
-      "mode": ["全面战争", "征服", "突破"],
+      "mode": [
+        "全面战争",
+        "征服",
+        "突破"
+      ],
       "markers": [
-        { "id": "1", "type": "spawn", "label": "进攻方基地", "description": "进攻方出生点", "x": 50, "y": 95 },
-        { "id": "2", "type": "spawn", "label": "防守方基地", "description": "防守方出生点", "x": 50, "y": 5 },
-        { "id": "3", "type": "extract", "label": "A点 - 发射塔", "description": "巨大的火箭发射塔", "x": 50, "y": 50 },
-        { "id": "4", "type": "extract", "label": "B点 - 控制中心", "description": "发射控制中心建筑", "x": 25, "y": 40 },
-        { "id": "5", "type": "extract", "label": "C点 - 燃料库", "description": "火箭燃料储存区", "x": 75, "y": 40 },
-        { "id": "6", "type": "extract", "label": "D点 - 组装车间", "description": "火箭组装车间", "x": 50, "y": 25 },
-        { "id": "7", "type": "loot", "label": "技术设备", "description": "高级技术装备刷新点", "x": 30, "y": 55 },
-        { "id": "8", "type": "loot", "label": "军械库", "description": "军用武器储存点", "x": 70, "y": 55 },
-        { "id": "9", "type": "danger", "label": "开阔地带", "description": "缺少掩体的危险区域", "x": 50, "y": 70 },
-        { "id": "10", "type": "camp", "label": "伏击点", "description": "敌人常设伏的位置", "x": 15, "y": 50 },
-        { "id": "11", "type": "boss", "label": "精英守卫", "description": "精英AI守卫刷新点", "x": 50, "y": 35 }
+        {
+          "id": "1",
+          "type": "spawn",
+          "label": "进攻方基地",
+          "description": "进攻方出生点",
+          "x": 50,
+          "y": 95
+        },
+        {
+          "id": "2",
+          "type": "spawn",
+          "label": "防守方基地",
+          "description": "防守方出生点",
+          "x": 50,
+          "y": 5
+        },
+        {
+          "id": "3",
+          "type": "extract",
+          "label": "A点 - 发射塔",
+          "description": "巨大的火箭发射塔",
+          "x": 50,
+          "y": 50
+        },
+        {
+          "id": "4",
+          "type": "extract",
+          "label": "B点 - 控制中心",
+          "description": "发射控制中心建筑",
+          "x": 25,
+          "y": 40
+        },
+        {
+          "id": "5",
+          "type": "extract",
+          "label": "C点 - 燃料库",
+          "description": "火箭燃料储存区",
+          "x": 75,
+          "y": 40
+        },
+        {
+          "id": "6",
+          "type": "extract",
+          "label": "D点 - 组装车间",
+          "description": "火箭组装车间",
+          "x": 50,
+          "y": 25
+        },
+        {
+          "id": "7",
+          "type": "loot",
+          "label": "技术设备",
+          "description": "高级技术装备刷新点",
+          "x": 30,
+          "y": 55
+        },
+        {
+          "id": "8",
+          "type": "loot",
+          "label": "军械库",
+          "description": "军用武器储存点",
+          "x": 70,
+          "y": 55
+        },
+        {
+          "id": "9",
+          "type": "danger",
+          "label": "开阔地带",
+          "description": "缺少掩体的危险区域",
+          "x": 50,
+          "y": 70
+        },
+        {
+          "id": "10",
+          "type": "camp",
+          "label": "伏击点",
+          "description": "敌人常设伏的位置",
+          "x": 15,
+          "y": 50
+        },
+        {
+          "id": "11",
+          "type": "boss",
+          "label": "精英守卫",
+          "description": "精英AI守卫刷新点",
+          "x": 50,
+          "y": 35
+        }
       ],
       "tips": [
         "发射塔内部结构复杂，适合近战",
@@ -121,21 +415,86 @@
       "name": "衔尾蛇",
       "nameEn": "Ouroboros",
       "description": "环形地下设施，结构紧凑，是危险行动模式的小型地图。",
-      "imageUrl": "/images/maps/ouroboros-overview.webp",
-      "mapImageUrl": "/images/maps/ouroboros-map.webp",
+      "imageUrl": "/images/maps/ouroboros-overview.svg",
+      "mapImageUrl": "/images/maps/ouroboros-map.svg",
       "size": "small",
       "playerCount": "3人小队",
-      "mode": ["危险行动"],
+      "mode": [
+        "危险行动"
+      ],
       "markers": [
-        { "id": "1", "type": "spawn", "label": "撤离电梯", "description": "任务完成后的撤离点", "x": 50, "y": 10 },
-        { "id": "2", "type": "extract", "label": "中央实验室", "description": "地图中心的核心区域", "x": 50, "y": 50 },
-        { "id": "3", "type": "loot", "label": "实验装备", "description": "实验性武器装备", "x": 25, "y": 50 },
-        { "id": "4", "type": "loot", "label": "数据终端", "description": "情报数据收集点", "x": 75, "y": 50 },
-        { "id": "5", "type": "loot", "label": "医疗室", "description": "医疗物资点", "x": 50, "y": 25 },
-        { "id": "6", "type": "boss", "label": "实验体", "description": "实验体Boss刷新点", "x": 50, "y": 75 },
-        { "id": "7", "type": "danger", "label": "监控区", "description": "有摄像头监控的区域", "x": 35, "y": 35 },
-        { "id": "8", "type": "camp", "label": "通风管道", "description": "可以通过通风管道绕后", "x": 65, "y": 35 },
-        { "id": "9", "type": "quest", "label": "样本存放点", "description": "任务目标样本", "x": 50, "y": 60 }
+        {
+          "id": "1",
+          "type": "spawn",
+          "label": "撤离电梯",
+          "description": "任务完成后的撤离点",
+          "x": 50,
+          "y": 10
+        },
+        {
+          "id": "2",
+          "type": "extract",
+          "label": "中央实验室",
+          "description": "地图中心的核心区域",
+          "x": 50,
+          "y": 50
+        },
+        {
+          "id": "3",
+          "type": "loot",
+          "label": "实验装备",
+          "description": "实验性武器装备",
+          "x": 25,
+          "y": 50
+        },
+        {
+          "id": "4",
+          "type": "loot",
+          "label": "数据终端",
+          "description": "情报数据收集点",
+          "x": 75,
+          "y": 50
+        },
+        {
+          "id": "5",
+          "type": "loot",
+          "label": "医疗室",
+          "description": "医疗物资点",
+          "x": 50,
+          "y": 25
+        },
+        {
+          "id": "6",
+          "type": "boss",
+          "label": "实验体",
+          "description": "实验体Boss刷新点",
+          "x": 50,
+          "y": 75
+        },
+        {
+          "id": "7",
+          "type": "danger",
+          "label": "监控区",
+          "description": "有摄像头监控的区域",
+          "x": 35,
+          "y": 35
+        },
+        {
+          "id": "8",
+          "type": "camp",
+          "label": "通风管道",
+          "description": "可以通过通风管道绕后",
+          "x": 65,
+          "y": 35
+        },
+        {
+          "id": "9",
+          "type": "quest",
+          "label": "样本存放点",
+          "description": "任务目标样本",
+          "x": 50,
+          "y": 60
+        }
       ],
       "tips": [
         "地图较小，交火频率很高",
