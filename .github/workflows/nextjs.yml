@@ -17,34 +17,33 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./deltaforce-wiki
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-
-      - name: Setup Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: "20"
 
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
         with:
           version: 9
 
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "lts/*"
+          cache: "pnpm"
+          cache-dependency-path: "./deltaforce-wiki/pnpm-lock.yaml"
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
-        with:
-          static_site_generator: next
 
       - name: Install dependencies
-        run: pnpm install
-        working-directory: ./deltaforce-wiki
+        run: pnpm install --no-frozen-lockfile
 
       - name: Build with Next.js
         run: pnpm next build
-        working-directory: ./deltaforce-wiki
-        env:
-          NODE_ENV: production
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
