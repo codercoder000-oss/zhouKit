@@ -1,0 +1,396 @@
+{
+  "operators": [
+    {
+      "id": "assault-001",
+      "name": "红狼",
+      "nameEn": "RedWolf",
+      "role": "assault",
+      "description": "前特种作战部队成员，擅长正面突破和近距离作战。红狼以无情的攻击风格和卓越的生存能力闻名。",
+      "backstory": "红狼曾服役于著名的'猎鹰'特种作战大队，在多次反恐行动中建立功勋。退役后加入了三角洲行动，以其标志性的红色战术装备和狼一般的战斗直觉成为突击干员中的佼佼者。",
+      "imageUrl": "/images/operators/redwolf.webp",
+      "skills": [
+        {
+          "id": "skill-rw-1",
+          "name": "肾上腺素",
+          "description": "激活后短时间内大幅提升移动速度和射击精度，持续5秒",
+          "cooldown": 25,
+          "type": "active",
+          "imageUrl": "/images/skills/adrenaline.webp"
+        },
+        {
+          "id": "skill-rw-2",
+          "name": "战斗本能",
+          "description": "生命值低于30%时自动触发，减少20%受到的伤害",
+          "cooldown": 0,
+          "type": "passive",
+          "imageUrl": "/images/skills/combat-instinct.webp"
+        },
+        {
+          "id": "skill-rw-3",
+          "name": "血腥狂怒",
+          "description": "进入狂暴状态，攻击力和射速提升50%，击杀敌人回复生命值",
+          "cooldown": 120,
+          "type": "ultimate",
+          "imageUrl": "/images/skills/bloody-rage.webp"
+        }
+      ],
+      "stats": {
+        "health": 150,
+        "armor": 80,
+        "speed": 65
+      },
+      "difficulty": 2,
+      "tips": [
+        "利用肾上腺素快速接近敌人或撤离危险区域",
+        "在生命值较低时保持冷静，战斗本能会给你额外生存空间",
+        "血腥狂怒期间优先攻击生命值低的敌人以最大化回血效果",
+        "适合使用突击步枪和霰弹枪进行中近距离作战"
+      ],
+      "synergy": ["support-001", "recon-001"],
+      "counters": ["engineer-002"]
+    },
+    {
+      "id": "assault-002",
+      "name": "幽灵",
+      "nameEn": "Phantom",
+      "role": "assault",
+      "description": "隐秘行动专家，擅长渗透和暗杀。幽灵能够在敌人毫无察觉的情况下完成任务目标。",
+      "backstory": "幽灵的真实身份成谜，据传曾是某国情报机构的顶级特工。他精通各种隐秘渗透技术，是执行斩首行动和情报收集任务的不二人选。",
+      "imageUrl": "/images/operators/phantom.webp",
+      "skills": [
+        {
+          "id": "skill-ph-1",
+          "name": "光学迷彩",
+          "description": "激活后进入隐形状态，移动时可见度极低，静止时几乎完全隐形",
+          "cooldown": 35,
+          "type": "active",
+          "imageUrl": "/images/skills/optical-camo.webp"
+        },
+        {
+          "id": "skill-ph-2",
+          "name": "潜行大师",
+          "description": "移动时脚步声降低70%，从背后攻击造成额外50%伤害",
+          "cooldown": 0,
+          "type": "passive",
+          "imageUrl": "/images/skills/stealth-master.webp"
+        },
+        {
+          "id": "skill-ph-3",
+          "name": "死亡标记",
+          "description": "标记一名敌人，使其受到的所有伤害增加100%，持续10秒。若标记期间目标死亡，技能冷却重置",
+          "cooldown": 90,
+          "type": "ultimate",
+          "imageUrl": "/images/skills/death-mark.webp"
+        }
+      ],
+      "stats": {
+        "health": 110,
+        "armor": 50,
+        "speed": 85
+      },
+      "difficulty": 4,
+      "tips": [
+        "光学迷彩期间避免高速移动，会留下可见的扭曲痕迹",
+        "利用潜行大师的背刺加成优先解决高价值目标",
+        "死亡标记配合队友集火可快速消灭敌方核心单位",
+        "适合使用冲锋枪和手枪进行快速暗杀"
+      ],
+      "synergy": ["recon-002", "support-002"],
+      "counters": ["recon-001"]
+    },
+    {
+      "id": "recon-001",
+      "name": "鹰眼",
+      "nameEn": "Hawkeye",
+      "role": "recon",
+      "description": "精英狙击手，拥有超凡的观察力和精准射击能力。鹰眼能够为团队提供至关重要的战场情报。",
+      "backstory": "鹰眼是前奥林匹克射击冠军，后服役于侦察部队。他的视力经过特殊训练，能够在极端环境下发现常人无法察觉的细节。",
+      "imageUrl": "/images/operators/hawkeye.webp",
+      "skills": [
+        {
+          "id": "skill-he-1",
+          "name": "战术扫描",
+          "description": "扫描前方扇形区域，标记所有敌人位置5秒，标记期间敌人受到额外15%伤害",
+          "cooldown": 30,
+          "type": "active",
+          "imageUrl": "/images/skills/tactical-scan.webp"
+        },
+        {
+          "id": "skill-he-2",
+          "name": "锐利目光",
+          "description": "敌人进入视野时自动高亮显示，视野范围增加30%",
+          "cooldown": 0,
+          "type": "passive",
+          "imageUrl": "/images/skills/sharp-vision.webp"
+        },
+        {
+          "id": "skill-he-3",
+          "name": "致命一击",
+          "description": "下一发射击必定暴击且无视护甲，爆头击杀可立即再次使用",
+          "cooldown": 60,
+          "type": "ultimate",
+          "imageUrl": "/images/skills/lethal-shot.webp"
+        }
+      ],
+      "stats": {
+        "health": 100,
+        "armor": 40,
+        "speed": 60
+      },
+      "difficulty": 3,
+      "tips": [
+        "优先占据制高点使用战术扫描为团队提供视野优势",
+        "锐利目光可以帮助你发现隐藏的敌人和陷阱",
+        "致命一击适合对付高护甲目标或进行关键击杀",
+        "与突击干员配合，为他们标记的敌人提供火力支援"
+      ],
+      "synergy": ["assault-001", "support-001"],
+      "counters": ["assault-002"]
+    },
+    {
+      "id": "recon-002",
+      "name": "蜂鸟",
+      "nameEn": "Hummingbird",
+      "role": "recon",
+      "description": "无人机操作专家，利用高科技装备进行战场侦察和干扰。蜂鸟是现代信息战的专家。",
+      "backstory": "蜂鸟是前空军无人机飞行员，拥有数千小时的飞行经验。她开发的微型战术无人机系统彻底改变了小队级别的侦察方式。",
+      "imageUrl": "/images/operators/hummingbird.webp",
+      "skills": [
+        {
+          "id": "skill-hb-1",
+          "name": "侦察无人机",
+          "description": "部署一架侦察无人机，提供周围区域的实时视野，可手动控制或自动巡逻",
+          "cooldown": 20,
+          "type": "active",
+          "imageUrl": "/images/skills/recon-drone.webp"
+        },
+        {
+          "id": "skill-hb-2",
+          "name": "电子嗅觉",
+          "description": "自动探测附近50米内的电子设备，包括敌方陷阱、摄像头和通信设备",
+          "cooldown": 0,
+          "type": "passive",
+          "imageUrl": "/images/skills/electronic-sense.webp"
+        },
+        {
+          "id": "skill-hb-3",
+          "name": "全频干扰",
+          "description": "释放强力电磁脉冲，瘫痪范围内所有电子设备10秒，并暴露敌人位置",
+          "cooldown": 100,
+          "type": "ultimate",
+          "imageUrl": "/images/skills/emp-blast.webp"
+        }
+      ],
+      "stats": {
+        "health": 95,
+        "armor": 45,
+        "speed": 75
+      },
+      "difficulty": 3,
+      "tips": [
+        "侦察无人机可以安全地探查危险区域，但注意它会被敌人发现和摧毁",
+        "利用电子嗅觉提前发现敌方工程师布置的陷阱",
+        "全频干扰在敌方集结或防守时使用效果最佳",
+        "与幽灵配合，为他提供敌人位置信息"
+      ],
+      "synergy": ["assault-002", "engineer-001"],
+      "counters": ["engineer-001"]
+    },
+    {
+      "id": "support-001",
+      "name": "战地天使",
+      "nameEn": "CombatAngel",
+      "role": "support",
+      "description": "医疗专家，在战场上挽救无数生命。战地天使是团队生存的关键保障。",
+      "backstory": "战地天使曾是国际红十字会医疗队的成员，在多个战区提供人道主义医疗援助。加入三角洲行动后，她将医疗技能与战术训练相结合。",
+      "imageUrl": "/images/operators/combatangel.webp",
+      "skills": [
+        {
+          "id": "skill-ca-1",
+          "name": "治疗脉冲",
+          "description": "释放治疗能量波，为周围15米内所有友军回复50点生命值",
+          "cooldown": 25,
+          "type": "active",
+          "imageUrl": "/images/skills/healing-pulse.webp"
+        },
+        {
+          "id": "skill-ca-2",
+          "name": "急救专家",
+          "description": "复活队友速度提升100%，被复活队友恢复50%生命值",
+          "cooldown": 0,
+          "type": "passive",
+          "imageUrl": "/images/skills/medic-expert.webp"
+        },
+        {
+          "id": "skill-ca-3",
+          "name": "生命领域",
+          "description": "创造一个持续15秒的治疗领域，领域内友军持续回复生命且获得20%伤害减免",
+          "cooldown": 120,
+          "type": "ultimate",
+          "imageUrl": "/images/skills/life-domain.webp"
+        }
+      ],
+      "stats": {
+        "health": 120,
+        "armor": 60,
+        "speed": 70
+      },
+      "difficulty": 2,
+      "tips": [
+        "治疗脉冲是团队续航的关键，尽量覆盖多名队友",
+        "优先复活核心输出干员，急救专家让复活后的队友更快投入战斗",
+        "生命领域在占领要点或防守时使用效果最佳",
+        "跟随突击干员行动，及时为他们提供治疗支援"
+      ],
+      "synergy": ["assault-001", "assault-002"],
+      "counters": ["engineer-002"]
+    },
+    {
+      "id": "support-002",
+      "name": "铁幕",
+      "nameEn": "IronCurtain",
+      "role": "support",
+      "description": "防御专家，使用重型护盾和护甲强化装置保护队友。铁幕是不可逾越的防线。",
+      "backstory": "铁幕曾是重型机械化部队的装甲兵，对防护战术有深刻理解。他开发的便携式护盾发生器为小队作战带来了革命性的防御手段。",
+      "imageUrl": "/images/operators/ironcurtain.webp",
+      "skills": [
+        {
+          "id": "skill-ic-1",
+          "name": "能量护盾",
+          "description": "展开能量护盾，可阻挡前方所有子弹和爆炸伤害，护盾有500点耐久",
+          "cooldown": 30,
+          "type": "active",
+          "imageUrl": "/images/skills/energy-shield.webp"
+        },
+        {
+          "id": "skill-ic-2",
+          "name": "护甲强化",
+          "description": "自身护甲值提升50%，免疫小型爆炸物的击退效果",
+          "cooldown": 0,
+          "type": "passive",
+          "imageUrl": "/images/skills/armor-boost.webp"
+        },
+        {
+          "id": "skill-ic-3",
+          "name": "绝对防御",
+          "description": "为自身和周围友军施加无敌护盾，持续3秒，期间免疫所有伤害",
+          "cooldown": 150,
+          "type": "ultimate",
+          "imageUrl": "/images/skills/absolute-defense.webp"
+        }
+      ],
+      "stats": {
+        "health": 180,
+        "armor": 100,
+        "speed": 45
+      },
+      "difficulty": 3,
+      "tips": [
+        "能量护盾是团队推进时的重要掩护，注意护盾耐久度",
+        "利用高护甲值吸收伤害，为队友创造输出空间",
+        "绝对防御可用来抵消敌方的爆发伤害或终极技能",
+        "与侦察干员配合，在移动时提供护盾掩护"
+      ],
+      "synergy": ["recon-001", "engineer-001"],
+      "counters": ["assault-001"]
+    },
+    {
+      "id": "engineer-001",
+      "name": "工匠",
+      "nameEn": "Artificer",
+      "role": "engineer",
+      "description": "技术天才，精通各种战术装置的设计与部署。工匠的创造力能解决任何战场难题。",
+      "backstory": "工匠是前军工企业的首席设计师，参与过多种先进武器系统的研发。他携带的自制装备展现了工程学在战场上的无限可能。",
+      "imageUrl": "/images/operators/artificer.webp",
+      "skills": [
+        {
+          "id": "skill-ar-1",
+          "name": "自动炮台",
+          "description": "部署一座自动攻击敌方目标的炮台，持续30秒或直到被摧毁",
+          "cooldown": 40,
+          "type": "active",
+          "imageUrl": "/images/skills/auto-turret.webp"
+        },
+        {
+          "id": "skill-ar-2",
+          "name": "快速修复",
+          "description": "可以修复载具、设备和自己，修复速度提升100%，同时获得蓝图视野可透视设备内部",
+          "cooldown": 0,
+          "type": "passive",
+          "imageUrl": "/images/skills/quick-fix.webp"
+        },
+        {
+          "id": "skill-ar-3",
+          "name": "机械军团",
+          "description": "召唤3架无人机协同作战，分别执行攻击、防御、侦察任务，持续20秒",
+          "cooldown": 140,
+          "type": "ultimate",
+          "imageUrl": "/images/skills/mech-army.webp"
+        }
+      ],
+      "stats": {
+        "health": 110,
+        "armor": 70,
+        "speed": 60
+      },
+      "difficulty": 4,
+      "tips": [
+        "自动炮台适合布置在战略要道和侧翼，控制区域",
+        "利用快速修复维护团队装备，保持战斗力",
+        "机械军团是全能型终极技能，根据战况灵活使用各无人机",
+        "与支援干员配合，为炮台提供额外保护"
+      ],
+      "synergy": ["support-002", "recon-002"],
+      "counters": ["recon-002"]
+    },
+    {
+      "id": "engineer-002",
+      "name": "爆破手",
+      "nameEn": "Demolitionist",
+      "role": "engineer",
+      "description": "爆炸物专家，擅长使用各类爆炸装置进行区域控制。爆破手让敌人无处遁形。",
+      "backstory": "爆破手曾在工兵部队服役，参与过数百次拆弹和爆破任务。他对爆炸物有着近乎艺术般的掌控力，每一次爆炸都经过精密计算。",
+      "imageUrl": "/images/operators/demolitionist.webp",
+      "skills": [
+        {
+          "id": "skill-de-1",
+          "name": "粘性炸药",
+          "description": "投掷可附着在表面的高爆炸药，手动引爆或5秒后自动引爆，造成范围伤害",
+          "cooldown": 15,
+          "type": "active",
+          "imageUrl": "/images/skills/sticky-bomb.webp"
+        },
+        {
+          "id": "skill-de-2",
+          "name": "爆炸专家",
+          "description": "受到的爆炸伤害降低50%，对建筑结构伤害提升100%",
+          "cooldown": 0,
+          "type": "passive",
+          "imageUrl": "/images/skills/explosive-expert.webp"
+        },
+        {
+          "id": "skill-de-3",
+          "name": "集束轰炸",
+          "description": "标记一个区域进行轰炸，3秒后数枚炸弹落下造成大范围毁灭性伤害",
+          "cooldown": 110,
+          "type": "ultimate",
+          "imageUrl": "/images/skills/cluster-bomb.webp"
+        }
+      ],
+      "stats": {
+        "health": 130,
+        "armor": 75,
+        "speed": 55
+      },
+      "difficulty": 3,
+      "tips": [
+        "粘性炸药可以附着在敌人或友方载具上，创造战术机会",
+        "利用爆炸专家被动安全地穿越雷区",
+        "集束轰炸需要预判敌人位置，配合侦察标记使用",
+        "适合破坏敌方防御工事和清除聚集的敌人"
+      ],
+      "synergy": ["recon-001", "recon-002"],
+      "counters": ["support-001", "support-002"]
+    }
+  ]
+}

@@ -1,0 +1,475 @@
+{
+  "quests": [
+    {
+      "id": "main-001",
+      "name": "沙漠风暴",
+      "nameEn": "Desert Storm",
+      "type": "main",
+      "difficulty": "medium",
+      "description": "潜入敌方位于沙漠深处的秘密基地，获取关于新武器系统的情报并安全撤离。",
+      "prerequisites": [],
+      "steps": [
+        {
+          "order": 1,
+          "description": "从沙漠边缘的潜入点出发，避开敌方巡逻队",
+          "tips": "利用沙丘地形进行隐蔽移动，注意巡逻兵的视野范围",
+          "mapId": "desert-outskirts"
+        },
+        {
+          "order": 2,
+          "description": "潜入基地外围，关闭发电站导致基地停电",
+          "tips": "优先解决发电站守卫，停电会暂时禁用基地的监控系统",
+          "mapId": "base-perimeter"
+        },
+        {
+          "order": 3,
+          "description": "进入指挥中心，下载武器系统情报",
+          "tips": "下载期间保持警戒，敌人会试图重启系统",
+          "mapId": "command-center"
+        },
+        {
+          "order": 4,
+          "description": "从地下隧道撤离，与接应部队汇合",
+          "tips": "隧道内有敌方增援，准备遭遇战",
+          "mapId": "underground-tunnel"
+        }
+      ],
+      "rewards": [
+        { "type": "exp", "name": "经验值", "amount": 5000 },
+        { "type": "money", "name": "游戏币", "amount": 10000 },
+        { "type": "weapon", "name": "M4A1-沙漠迷彩" },
+        { "type": "skin", "name": "沙漠作战服" }
+      ],
+      "estimatedTime": "20-30分钟",
+      "tips": [
+        "建议携带侦察干员提前探查敌人位置",
+        "停电时间是有限的，抓紧时间完成任务目标",
+        "地下隧道狭窄，霰弹枪在此有优势"
+      ],
+      "relatedMapIds": ["desert-outskirts", "base-perimeter", "command-center", "underground-tunnel"]
+    },
+    {
+      "id": "main-002",
+      "name": "雪原行动",
+      "nameEn": "Operation Snowfield",
+      "type": "main",
+      "difficulty": "hard",
+      "description": "在极寒的北极研究站阻止敌方的生物武器实验，解救被关押的人质。",
+      "prerequisites": ["main-001"],
+      "steps": [
+        {
+          "order": 1,
+          "description": "乘坐雪地摩托接近研究站",
+          "tips": "低温环境会持续损失生命值，注意寻找取暖点",
+          "mapId": "arctic-wasteland"
+        },
+        {
+          "order": 2,
+          "description": "潜入通讯塔，干扰敌方通讯系统",
+          "tips": "工程师干员可以更快完成干扰部署",
+          "mapId": "comm-tower"
+        },
+        {
+          "order": 3,
+          "description": "定位并解救人质",
+          "tips": "人质房间有重兵把守，建议使用闪光弹突入",
+          "mapId": "research-lab"
+        },
+        {
+          "order": 4,
+          "description": "摧毁生物武器样本储存室",
+          "tips": "放置炸药后需要1分钟引燃时间，期间抵御敌人进攻",
+          "mapId": "bioweapon-storage"
+        },
+        {
+          "order": 5,
+          "description": "护送人质撤离至直升机接应点",
+          "tips": "人质移动较慢，需要全程保护",
+          "mapId": "extraction-point"
+        }
+      ],
+      "rewards": [
+        { "type": "exp", "name": "经验值", "amount": 8000 },
+        { "type": "money", "name": "游戏币", "amount": 15000 },
+        { "type": "weapon", "name": "AWP-极地涂装" },
+        { "type": "skin", "name": "雪地吉利服" }
+      ],
+      "estimatedTime": "30-40分钟",
+      "tips": [
+        "携带支援干员为人质提供治疗和护盾",
+        "低温环境影响电子设备，侦察无人机使用时间减半",
+        "撤离阶段敌人会全力追击，提前规划路线"
+      ],
+      "relatedMapIds": ["arctic-wasteland", "comm-tower", "research-lab", "bioweapon-storage", "extraction-point"]
+    },
+    {
+      "id": "main-003",
+      "name": "城市巷战",
+      "nameEn": "Urban Warfare",
+      "type": "main",
+      "difficulty": "hard",
+      "description": "在被敌方占领的城市废墟中建立据点，为后续大部队进攻创造条件。",
+      "prerequisites": ["main-002"],
+      "steps": [
+        {
+          "order": 1,
+          "description": "潜入城市外围的废弃建筑",
+          "tips": "城市内遍布狙击手，注意寻找掩体",
+          "mapId": "ruined-city"
+        },
+        {
+          "order": 2,
+          "description": "清除三个敌方前哨站",
+          "tips": "可以选择潜行或强攻，潜行成功可获得额外奖励",
+          "mapId": "city-blocks"
+        },
+        {
+          "order": 3,
+          "description": "占领市政厅作为前线指挥部",
+          "tips": "占领后需要防守3波敌人反击",
+          "mapId": "city-hall"
+        },
+        {
+          "order": 4,
+          "description": "呼叫并保护工程车队建立补给线",
+          "tips": "车队会沿固定路线移动，提前清理沿途敌人",
+          "mapId": "supply-route"
+        }
+      ],
+      "rewards": [
+        { "type": "exp", "name": "经验值", "amount": 7000 },
+        { "type": "money", "name": "游戏币", "amount": 12000 },
+        { "type": "weapon", "name": "SCAR-H-城市迷彩" },
+        { "type": "item", "name": "高级补给箱", "amount": 3 }
+      ],
+      "estimatedTime": "25-35分钟",
+      "tips": [
+        "城市地形适合使用冲锋枪和霰弹枪",
+        "高处位置通常有敌方狙击手，优先清理",
+        "工程车队需要全程护送，不要离得太远"
+      ],
+      "relatedMapIds": ["ruined-city", "city-blocks", "city-hall", "supply-route"]
+    },
+    {
+      "id": "main-004",
+      "name": "深海潜航",
+      "nameEn": "Deep Sea Dive",
+      "type": "main",
+      "difficulty": "extreme",
+      "description": "潜入海底敌方设施，阻止核导弹发射，这将是决定性的战斗。",
+      "prerequisites": ["main-003"],
+      "steps": [
+        {
+          "order": 1,
+          "description": "使用潜水器接近海底基地",
+          "tips": "注意氧气值，海底迷路会导致任务失败",
+          "mapId": "deep-ocean"
+        },
+        {
+          "order": 2,
+          "description": "突破基地外围的水下防御系统",
+          "tips": "工程师可以关闭自动鱼雷发射器",
+          "mapId": "underwater-defenses"
+        },
+        {
+          "order": 3,
+          "description": "潜入基地内部，获取导弹发射密码",
+          "tips": "密码分三部分存放在不同区域",
+          "mapId": "base-interior"
+        },
+        {
+          "order": 4,
+          "description": "抵达控制中心，中止发射程序",
+          "tips": "中止过程中会触发警报，准备迎战精英敌人",
+          "mapId": "control-center"
+        },
+        {
+          "order": 5,
+          "description": "逃离即将自毁的基地",
+          "tips": "限时8分钟，超时将被埋葬在海底",
+          "mapId": "escape-route"
+        },
+        {
+          "order": 6,
+          "description": "乘坐救援潜艇撤离",
+          "tips": "最后阶段会有敌方潜水员追击，全力反击",
+          "mapId": "rescue-submarine"
+        }
+      ],
+      "rewards": [
+        { "type": "exp", "name": "经验值", "amount": 15000 },
+        { "type": "money", "name": "游戏币", "amount": 30000 },
+        { "type": "weapon", "name": "传说级突击步枪" },
+        { "type": "skin", "name": "深海特战服" },
+        { "type": "item", "name": "精英补给箱", "amount": 5 }
+      ],
+      "estimatedTime": "45-60分钟",
+      "tips": [
+        "这是当前版本最难的主线任务，建议满编满级队伍挑战",
+        "水下战斗限制部分技能使用，提前了解各干员适应性",
+        "最终boss有复杂机制，观察其攻击模式寻找破绽"
+      ],
+      "relatedMapIds": ["deep-ocean", "underwater-defenses", "base-interior", "control-center", "escape-route", "rescue-submarine"]
+    },
+    {
+      "id": "side-001",
+      "name": "物资回收",
+      "nameEn": "Supply Recovery",
+      "type": "side",
+      "difficulty": "easy",
+      "description": "回收坠毁运输机上的重要补给物资。",
+      "prerequisites": [],
+      "steps": [
+        {
+          "order": 1,
+          "description": "抵达坠机地点",
+          "tips": "坠机点附近有敌方侦察小队",
+          "mapId": "crash-site"
+        },
+        {
+          "order": 2,
+          "description": "收集散落的补给箱",
+          "tips": "共5个补给箱，收集越多奖励越丰厚",
+          "mapId": "crash-site"
+        },
+        {
+          "order": 3,
+          "description": "护送物资车到安全区",
+          "tips": "物资车移动缓慢，途中会遭遇伏击",
+          "mapId": "evacuation-road"
+        }
+      ],
+      "rewards": [
+        { "type": "exp", "name": "经验值", "amount": 2000 },
+        { "type": "money", "name": "游戏币", "amount": 3000 },
+        { "type": "item", "name": "医疗包", "amount": 5 }
+      ],
+      "estimatedTime": "10-15分钟",
+      "tips": [
+        "坠机点敌人不多，适合新手练习",
+        "收集全部补给箱可获得隐藏成就"
+      ],
+      "relatedMapIds": ["crash-site", "evacuation-road"]
+    },
+    {
+      "id": "side-002",
+      "name": "敌后破坏",
+      "nameEn": "Sabotage Mission",
+      "type": "side",
+      "difficulty": "medium",
+      "description": "潜入敌方炼油厂，破坏其燃料供应。",
+      "prerequisites": ["main-001"],
+      "steps": [
+        {
+          "order": 1,
+          "description": "从下水道潜入炼油厂",
+          "tips": "下水道内有有毒气体，注意佩戴防毒面具",
+          "mapId": "sewer-entrance"
+        },
+        {
+          "order": 2,
+          "description": "在三个储油罐安装炸药",
+          "tips": "安装需要时间，注意周围巡逻兵",
+          "mapId": "refinery-floor"
+        },
+        {
+          "order": 3,
+          "description": "启动中央控制台的过载程序",
+          "tips": "需要同时操作两个控制台，单人任务需要快速往返",
+          "mapId": "control-room"
+        },
+        {
+          "order": 4,
+          "description": "在设施爆炸前撤离",
+          "tips": "倒计时3分钟，原路返回已不可行，寻找其他出口",
+          "mapId": "refinery-exit"
+        }
+      ],
+      "rewards": [
+        { "type": "exp", "name": "经验值", "amount": 3500 },
+        { "type": "money", "name": "游戏币", "amount": 6000 },
+        { "type": "item", "name": "炸药包", "amount": 3 }
+      ],
+      "estimatedTime": "15-20分钟",
+      "tips": [
+        "幽灵干员在此任务中表现优异，可以轻松避开巡逻",
+        "最后的撤离阶段不要恋战，全力冲向出口"
+      ],
+      "relatedMapIds": ["sewer-entrance", "refinery-floor", "control-room", "refinery-exit"]
+    },
+    {
+      "id": "side-003",
+      "name": "狙击对决",
+      "nameEn": "Sniper Duel",
+      "type": "side",
+      "difficulty": "hard",
+      "description": "在废弃摩天大楼与敌方王牌狙击手一决高下。",
+      "prerequisites": ["main-002"],
+      "steps": [
+        {
+          "order": 1,
+          "description": "进入摩天大楼，逐层向上清理",
+          "tips": "每层都有敌方步兵驻守，狙击手在顶层观察",
+          "mapId": "skyscraper-lower"
+        },
+        {
+          "order": 2,
+          "description": "在中层遭遇敌方狙击手第一次攻击",
+          "tips": "寻找掩体，观察弹道判断敌方位置",
+          "mapId": "skyscraper-mid"
+        },
+        {
+          "order": 3,
+          "description": "登上顶层天台，进行最终对决",
+          "tips": "敌方狙击手会不断变换位置，保持移动",
+          "mapId": "skyscraper-roof"
+        }
+      ],
+      "rewards": [
+        { "type": "exp", "name": "经验值", "amount": 5000 },
+        { "type": "money", "name": "游戏币", "amount": 8000 },
+        { "type": "weapon", "name": "Barrett M82" }
+      ],
+      "estimatedTime": "20-25分钟",
+      "tips": [
+        "强烈推荐使用鹰眼干员，主动技能可以暂时标记敌方狙击手",
+        "一枪爆头可以直接结束战斗，否则他会召唤增援"
+      ],
+      "relatedMapIds": ["skyscraper-lower", "skyscraper-mid", "skyscraper-roof"]
+    },
+    {
+      "id": "daily-001",
+      "name": "每日训练",
+      "nameEn": "Daily Training",
+      "type": "daily",
+      "difficulty": "easy",
+      "description": "完成基础训练课程，保持战斗状态。",
+      "prerequisites": [],
+      "steps": [
+        {
+          "order": 1,
+          "description": "在射击场完成精准度测试",
+          "tips": "击中靶心得分更高，总分达到80分即可",
+          "mapId": "shooting-range"
+        },
+        {
+          "order": 2,
+          "description": "完成障碍赛跑",
+          "tips": "使用滑铲和跳跃快速通过障碍",
+          "mapId": "obstacle-course"
+        },
+        {
+          "order": 3,
+          "description": "进行模拟战斗，击败10个训练机器人",
+          "tips": "机器人AI不高，练习爆头技巧",
+          "mapId": "simulation-arena"
+        }
+      ],
+      "rewards": [
+        { "type": "exp", "name": "经验值", "amount": 1000 },
+        { "type": "money", "name": "游戏币", "amount": 2000 }
+      ],
+      "estimatedTime": "5-10分钟",
+      "tips": [
+        "每日必做任务，奖励稳定",
+        "可以在训练场练习新获得的武器"
+      ],
+      "relatedMapIds": ["shooting-range", "obstacle-course", "simulation-arena"]
+    },
+    {
+      "id": "daily-002",
+      "name": "巡逻任务",
+      "nameEn": "Patrol Duty",
+      "type": "daily",
+      "difficulty": "easy",
+      "description": "在友方控制区巡逻，消灭潜入的敌方小股部队。",
+      "prerequisites": [],
+      "steps": [
+        {
+          "order": 1,
+          "description": "在A区域巡逻并消灭3名敌人",
+          "tips": "敌人会在随机位置出现，保持警惕",
+          "mapId": "sector-a"
+        },
+        {
+          "order": 2,
+          "description": "在B区域巡逻并消灭3名敌人",
+          "tips": "B区域有更多掩体，小心埋伏",
+          "mapId": "sector-b"
+        },
+        {
+          "order": 3,
+          "description": "在C区域摧毁敌方通讯设备",
+          "tips": "通讯设备旁有重兵把守，建议先清理周围",
+          "mapId": "sector-c"
+        }
+      ],
+      "rewards": [
+        { "type": "exp", "name": "经验值", "amount": 1200 },
+        { "type": "money", "name": "游戏币", "amount": 2500 },
+        { "type": "item", "name": "弹药补给箱", "amount": 2 }
+      ],
+      "estimatedTime": "10-15分钟",
+      "tips": [
+        "三个区域可以按任意顺序完成",
+        "组队完成效率更高"
+      ],
+      "relatedMapIds": ["sector-a", "sector-b", "sector-c"]
+    },
+    {
+      "id": "weekly-001",
+      "name": "精英挑战",
+      "nameEn": "Elite Challenge",
+      "type": "weekly",
+      "difficulty": "extreme",
+      "description": "挑战最高难度的模拟战斗，证明自己的实力。",
+      "prerequisites": [],
+      "steps": [
+        {
+          "order": 1,
+          "description": "在困难模式下完成3个主线任务",
+          "tips": "困难模式下敌人更强大，但奖励也更丰厚",
+          "mapId": "various"
+        },
+        {
+          "order": 2,
+          "description": "在不死亡的情况下完成一场完整任务",
+          "tips": "谨慎行事，善用掩体和团队配合",
+          "mapId": "various"
+        },
+        {
+          "order": 3,
+          "description": "在限时挑战中击败精英Boss",
+          "tips": "Boss有复杂机制，先观察再攻击",
+          "mapId": "boss-arena"
+        },
+        {
+          "order": 4,
+          "description": "完成最终生存挑战，抵挡20波敌人进攻",
+          "tips": "合理分配资源，建造防御工事，后期敌人非常强大",
+          "mapId": "survival-arena"
+        },
+        {
+          "order": 5,
+          "description": "击败隐藏Boss：战争机器",
+          "tips": "战争机器是巨型机甲，攻击其背后的能源核心造成有效伤害",
+          "mapId": "secret-boss-arena"
+        }
+      ],
+      "rewards": [
+        { "type": "exp", "name": "经验值", "amount": 20000 },
+        { "type": "money", "name": "游戏币", "amount": 50000 },
+        { "type": "weapon", "name": "传说级武器箱" },
+        { "type": "skin", "name": "精英战士皮肤" },
+        { "type": "item", "name": "史诗补给箱", "amount": 3 }
+      ],
+      "estimatedTime": "60-90分钟",
+      "tips": [
+        "建议组队完成，单枪匹马很难通过所有挑战",
+        "每周重置一次，是获取高级装备的主要途径",
+        "生存挑战中工程师干员的炮台非常有用"
+      ],
+      "relatedMapIds": ["various", "boss-arena", "survival-arena", "secret-boss-arena"]
+    }
+  ]
+}

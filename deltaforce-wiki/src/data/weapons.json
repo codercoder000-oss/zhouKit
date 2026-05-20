@@ -1,0 +1,383 @@
+{
+  "weapons": [
+    {
+      "id": "ak-47",
+      "name": "AK-47",
+      "nameEn": "AK-47",
+      "category": "assault-rifle",
+      "caliber": "7.62x39mm",
+      "description": "经典苏制突击步枪，威力强大但后坐力较高，适合中近距离作战。",
+      "imageUrl": "/images/weapons/ak-47.webp",
+      "tier": "A",
+      "unlockLevel": 1,
+      "stats": {
+        "damage": 42,
+        "fireRate": 600,
+        "accuracy": 65,
+        "recoil": 75,
+        "mobility": 70,
+        "range": 150,
+        "magazineSize": 30,
+        "reloadTime": 2.5
+      },
+      "attachments": [
+        { "type": "muzzle", "compatible": ["ak-suppressor", "ak-compensator", "ak-brake"] },
+        { "type": "barrel", "compatible": ["ak-long-barrel", "ak-short-barrel"] },
+        { "type": "scope", "compatible": ["red-dot", "holographic", "3x-scope", "4x-acog"] },
+        { "type": "grip", "compatible": ["vertical-grip", "angled-grip"] },
+        { "type": "stock", "compatible": ["ak-light-stock", "ak-heavy-stock"] }
+      ]
+    },
+    {
+      "id": "m4a1",
+      "name": "M4A1",
+      "nameEn": "M4A1",
+      "category": "assault-rifle",
+      "caliber": "5.56x45mm NATO",
+      "description": "美军标准制式步枪，稳定性出色，适合各种作战环境。",
+      "imageUrl": "/images/weapons/m4a1.webp",
+      "tier": "S",
+      "unlockLevel": 5,
+      "stats": {
+        "damage": 35,
+        "fireRate": 800,
+        "accuracy": 75,
+        "recoil": 55,
+        "mobility": 75,
+        "range": 140,
+        "magazineSize": 30,
+        "reloadTime": 2.2
+      },
+      "attachments": [
+        { "type": "muzzle", "compatible": ["m4-suppressor", "m4-compensator", "m4-brake"] },
+        { "type": "barrel", "compatible": ["m4-long-barrel", "m4-short-barrel"] },
+        { "type": "scope", "compatible": ["red-dot", "holographic", "3x-scope", "4x-acog"] },
+        { "type": "grip", "compatible": ["vertical-grip", "angled-grip", "stubby-grip"] },
+        { "type": "stock", "compatible": ["m4-light-stock", "m4-heavy-stock"] }
+      ]
+    },
+    {
+      "id": "hk416",
+      "name": "HK416",
+      "nameEn": "HK416",
+      "category": "assault-rifle",
+      "caliber": "5.56x45mm NATO",
+      "description": "德国精密制造的突击步枪，继承了AR平台的优点并改进了可靠性。",
+      "imageUrl": "/images/weapons/hk416.webp",
+      "tier": "S",
+      "unlockLevel": 15,
+      "stats": {
+        "damage": 36,
+        "fireRate": 850,
+        "accuracy": 78,
+        "recoil": 50,
+        "mobility": 72,
+        "range": 145,
+        "magazineSize": 30,
+        "reloadTime": 2.0
+      },
+      "attachments": [
+        { "type": "muzzle", "compatible": ["hk-suppressor", "hk-compensator"] },
+        { "type": "barrel", "compatible": ["hk-long-barrel", "hk-short-barrel"] },
+        { "type": "scope", "compatible": ["red-dot", "holographic", "3x-scope", "4x-acog"] },
+        { "type": "grip", "compatible": ["vertical-grip", "angled-grip"] },
+        { "type": "stock", "compatible": ["hk-light-stock", "hk-heavy-stock"] }
+      ]
+    },
+    {
+      "id": "scar-l",
+      "name": "SCAR-L",
+      "nameEn": "SCAR-L",
+      "category": "assault-rifle",
+      "caliber": "5.56x45mm NATO",
+      "description": "比利时FN公司制造的模块化突击步枪，以其卓越的可靠性和精度著称。",
+      "imageUrl": "/images/weapons/scar-l.webp",
+      "tier": "A",
+      "unlockLevel": 20,
+      "stats": {
+        "damage": 37,
+        "fireRate": 625,
+        "accuracy": 82,
+        "recoil": 45,
+        "mobility": 68,
+        "range": 160,
+        "magazineSize": 30,
+        "reloadTime": 2.4
+      },
+      "attachments": [
+        { "type": "muzzle", "compatible": ["scar-suppressor", "scar-compensator"] },
+        { "type": "barrel", "compatible": ["scar-long-barrel", "scar-short-barrel"] },
+        { "type": "scope", "compatible": ["red-dot", "holographic", "3x-scope", "4x-acog"] },
+        { "type": "grip", "compatible": ["vertical-grip", "angled-grip"] },
+        { "type": "stock", "compatible": ["scar-stock"] }
+      ]
+    },
+    {
+      "id": "mp5",
+      "name": "MP5",
+      "nameEn": "MP5",
+      "category": "smg",
+      "caliber": "9x19mm",
+      "description": "传奇的德国冲锋枪，以其精确度和可靠性成为全球特种部队的首选。",
+      "imageUrl": "/images/weapons/mp5.webp",
+      "tier": "A",
+      "unlockLevel": 3,
+      "stats": {
+        "damage": 28,
+        "fireRate": 800,
+        "accuracy": 72,
+        "recoil": 40,
+        "mobility": 85,
+        "range": 80,
+        "magazineSize": 30,
+        "reloadTime": 2.3
+      },
+      "attachments": [
+        { "type": "muzzle", "compatible": ["mp5-suppressor", "mp5-compensator"] },
+        { "type": "barrel", "compatible": ["mp5-sd-barrel", "mp5-short-barrel"] },
+        { "type": "scope", "compatible": ["red-dot", "holographic"] },
+        { "type": "grip", "compatible": ["vertical-grip"] },
+        { "type": "stock", "compatible": ["mp5-stock", "mp5-collapsible"] }
+      ]
+    },
+    {
+      "id": "vector",
+      "name": "Vector",
+      "nameEn": "Kriss Vector",
+      "category": "smg",
+      "caliber": ".45 ACP",
+      "description": "采用独特后坐力系统的冲锋枪，射速极快，近战爆发力惊人。",
+      "imageUrl": "/images/weapons/vector.webp",
+      "tier": "S",
+      "unlockLevel": 18,
+      "stats": {
+        "damage": 30,
+        "fireRate": 1200,
+        "accuracy": 68,
+        "recoil": 55,
+        "mobility": 88,
+        "range": 70,
+        "magazineSize": 25,
+        "reloadTime": 2.1
+      },
+      "attachments": [
+        { "type": "muzzle", "compatible": ["vector-suppressor"] },
+        { "type": "barrel", "compatible": ["vector-extended-barrel"] },
+        { "type": "scope", "compatible": ["red-dot", "holographic"] },
+        { "type": "grip", "compatible": ["vertical-grip", "angled-grip"] },
+        { "type": "stock", "compatible": ["vector-stock"] }
+      ]
+    },
+    {
+      "id": "p90",
+      "name": "P90",
+      "nameEn": "P90",
+      "category": "smg",
+      "caliber": "5.7x28mm",
+      "description": "比利时FN公司制造的独特冲锋枪，采用顶置弹匣设计，穿甲能力出色。",
+      "imageUrl": "/images/weapons/p90.webp",
+      "tier": "B",
+      "unlockLevel": 12,
+      "stats": {
+        "damage": 25,
+        "fireRate": 900,
+        "accuracy": 70,
+        "recoil": 35,
+        "mobility": 82,
+        "range": 85,
+        "magazineSize": 50,
+        "reloadTime": 2.6
+      },
+      "attachments": [
+        { "type": "muzzle", "compatible": ["p90-suppressor"] },
+        { "type": "scope", "compatible": ["red-dot", "holographic"] },
+        { "type": "laser", "compatible": ["p90-laser"] }
+      ]
+    },
+    {
+      "id": "awm",
+      "name": "AWM",
+      "nameEn": "Arctic Warfare Magnum",
+      "category": "sniper",
+      "caliber": ".338 Lapua Magnum",
+      "description": "英国精密国际公司制造的传奇狙击步枪，以极致精度和威力著称。",
+      "imageUrl": "/images/weapons/awm.webp",
+      "tier": "S",
+      "unlockLevel": 25,
+      "stats": {
+        "damage": 95,
+        "fireRate": 40,
+        "accuracy": 95,
+        "recoil": 90,
+        "mobility": 40,
+        "range": 500,
+        "magazineSize": 5,
+        "reloadTime": 3.5
+      },
+      "attachments": [
+        { "type": "muzzle", "compatible": ["awm-suppressor", "awm-brake"] },
+        { "type": "scope", "compatible": ["8x-scope", "12x-scope", "thermal-scope"] },
+        { "type": "grip", "compatible": ["sniper-bipod"] },
+        { "type": "stock", "compatible": ["awm-stock"] }
+      ]
+    },
+    {
+      "id": "m24",
+      "name": "M24",
+      "nameEn": "M24 SWS",
+      "category": "sniper",
+      "caliber": "7.62x51mm NATO",
+      "description": "美军标准狙击武器系统，基于雷明顿700步枪改进而来，精度极高。",
+      "imageUrl": "/images/weapons/m24.webp",
+      "tier": "A",
+      "unlockLevel": 10,
+      "stats": {
+        "damage": 85,
+        "fireRate": 50,
+        "accuracy": 90,
+        "recoil": 80,
+        "mobility": 50,
+        "range": 400,
+        "magazineSize": 5,
+        "reloadTime": 3.2
+      },
+      "attachments": [
+        { "type": "muzzle", "compatible": ["m24-suppressor", "m24-brake"] },
+        { "type": "scope", "compatible": ["6x-scope", "8x-scope", "12x-scope"] },
+        { "type": "stock", "compatible": ["m24-stock"] }
+      ]
+    },
+    {
+      "id": "m870",
+      "name": "M870",
+      "nameEn": "Remington 870",
+      "category": "shotgun",
+      "caliber": "12 Gauge",
+      "description": "传奇泵动式霰弹枪，坚固耐用，在近距离能造成毁灭性打击。",
+      "imageUrl": "/images/weapons/m870.webp",
+      "tier": "B",
+      "unlockLevel": 1,
+      "stats": {
+        "damage": 90,
+        "fireRate": 70,
+        "accuracy": 45,
+        "recoil": 85,
+        "mobility": 60,
+        "range": 30,
+        "magazineSize": 6,
+        "reloadTime": 4.0
+      },
+      "attachments": [
+        { "type": "muzzle", "compatible": ["870-choke", "870-brake"] },
+        { "type": "barrel", "compatible": ["870-short-barrel", "870-long-barrel"] },
+        { "type": "stock", "compatible": ["870-stock", "870-pistol-grip"] }
+      ]
+    },
+    {
+      "id": "m1911",
+      "name": "M1911",
+      "nameEn": "M1911",
+      "category": "pistol",
+      "caliber": ".45 ACP",
+      "description": "百年传奇手枪，大口径威力巨大，是许多射手的信仰之枪。",
+      "imageUrl": "/images/weapons/m1911.webp",
+      "tier": "B",
+      "unlockLevel": 1,
+      "stats": {
+        "damage": 45,
+        "fireRate": 300,
+        "accuracy": 60,
+        "recoil": 60,
+        "mobility": 95,
+        "range": 40,
+        "magazineSize": 7,
+        "reloadTime": 1.8
+      },
+      "attachments": [
+        { "type": "muzzle", "compatible": ["1911-suppressor", "1911-compensator"] },
+        { "type": "scope", "compatible": ["pistol-red-dot"] },
+        { "type": "laser", "compatible": ["pistol-laser"] }
+      ]
+    },
+    {
+      "id": "glock-18",
+      "name": "Glock-18",
+      "nameEn": "Glock 18",
+      "category": "pistol",
+      "caliber": "9x19mm",
+      "description": "奥地利制造的全自动手枪，射速惊人，是副武器中的火力担当。",
+      "imageUrl": "/images/weapons/glock-18.webp",
+      "tier": "A",
+      "unlockLevel": 8,
+      "stats": {
+        "damage": 28,
+        "fireRate": 1100,
+        "accuracy": 55,
+        "recoil": 70,
+        "mobility": 98,
+        "range": 35,
+        "magazineSize": 17,
+        "reloadTime": 1.5
+      },
+      "attachments": [
+        { "type": "muzzle", "compatible": ["glock-suppressor"] },
+        { "type": "stock", "compatible": ["glock-stock"] },
+        { "type": "laser", "compatible": ["pistol-laser"] }
+      ]
+    },
+    {
+      "id": "m249",
+      "name": "M249",
+      "nameEn": "M249 SAW",
+      "category": "lmg",
+      "caliber": "5.56x45mm NATO",
+      "description": "美军班用自动武器，弹链供弹提供持续火力压制能力。",
+      "imageUrl": "/images/weapons/m249.webp",
+      "tier": "B",
+      "unlockLevel": 22,
+      "stats": {
+        "damage": 35,
+        "fireRate": 750,
+        "accuracy": 60,
+        "recoil": 75,
+        "mobility": 45,
+        "range": 180,
+        "magazineSize": 100,
+        "reloadTime": 6.0
+      },
+      "attachments": [
+        { "type": "muzzle", "compatible": ["m249-brake", "m249-compensator"] },
+        { "type": "scope", "compatible": ["red-dot", "holographic", "3x-scope"] },
+        { "type": "grip", "compatible": ["bipod", "vertical-grip"] }
+      ]
+    },
+    {
+      "id": "mk14",
+      "name": "MK14 EBR",
+      "nameEn": "MK14 Enhanced Battle Rifle",
+      "category": "dmr",
+      "caliber": "7.62x51mm NATO",
+      "description": "基于M14步枪改进的精确射手步枪，在精准度和火力之间取得完美平衡。",
+      "imageUrl": "/images/weapons/mk14.webp",
+      "tier": "A",
+      "unlockLevel": 30,
+      "stats": {
+        "damage": 60,
+        "fireRate": 300,
+        "accuracy": 85,
+        "recoil": 70,
+        "mobility": 55,
+        "range": 250,
+        "magazineSize": 20,
+        "reloadTime": 2.8
+      },
+      "attachments": [
+        { "type": "muzzle", "compatible": ["mk14-suppressor", "mk14-brake"] },
+        { "type": "barrel", "compatible": ["mk14-long-barrel"] },
+        { "type": "scope", "compatible": ["3x-scope", "4x-acog", "6x-scope"] },
+        { "type": "grip", "compatible": ["bipod", "vertical-grip", "angled-grip"] },
+        { "type": "stock", "compatible": ["mk14-stock"] }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+@echo off
+:: 4个pane田字格布局：A左上 B右上 C左下 D右下
+start "" wt -w 0 new-tab --title "Agent-A" --suppressApplicationTitle --tabColor "#FF4081" -d "%~dp0." cmd /k "claude --dangerously-skip-permissions" ; split-pane -H --title "Agent-C" --suppressApplicationTitle --tabColor "#FFAB00" -d "%~dp0." cmd /k "claude --dangerously-skip-permissions" ; move-focus up ; split-pane -V --title "Agent-B" --suppressApplicationTitle --tabColor "#00E676" -d "%~dp0." cmd /k "claude --dangerously-skip-permissions" ; move-focus down ; split-pane -V --title "Agent-D" --suppressApplicationTitle --tabColor "#00B0FF" -d "%~dp0." cmd /k "claude --dangerously-skip-permissions"

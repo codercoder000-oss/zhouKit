@@ -1,0 +1,170 @@
+[
+  {
+    "id": "suppressor-762",
+    "name": "7.62mm消音器",
+    "type": "muzzle",
+    "statsModifier": { "damage": -2, "range": 10, "recoil": -5 },
+    "description": "降低枪声，略微增加射程，但伤害略有下降"
+  },
+  {
+    "id": "compensator-762",
+    "name": "7.62mm制退器",
+    "type": "muzzle",
+    "statsModifier": { "recoil": -15, "accuracy": 5 },
+    "description": "显著降低垂直后坐力"
+  },
+  {
+    "id": "flash-hider-762",
+    "name": "7.62mm消焰器",
+    "type": "muzzle",
+    "statsModifier": { "recoil": -8 },
+    "description": "消除枪口火焰，略微降低后坐力"
+  },
+  {
+    "id": "suppressor-556",
+    "name": "5.56mm消音器",
+    "type": "muzzle",
+    "statsModifier": { "damage": -1, "range": 8, "recoil": -3 },
+    "description": "降低枪声，增加射程"
+  },
+  {
+    "id": "compensator-556",
+    "name": "5.56mm制退器",
+    "type": "muzzle",
+    "statsModifier": { "recoil": -12, "accuracy": 3 },
+    "description": "有效降低后坐力"
+  },
+  {
+    "id": "suppressor-9mm",
+    "name": "9mm消音器",
+    "type": "muzzle",
+    "statsModifier": { "range": 5, "recoil": -2 },
+    "description": "适合隐蔽作战"
+  },
+  {
+    "id": "muzzle-brake-338",
+    "name": ".338枪口制退器",
+    "type": "muzzle",
+    "statsModifier": { "recoil": -20, "accuracy": -5 },
+    "description": "大幅降低大口径武器的后坐力"
+  },
+  {
+    "id": "choke-tight",
+    "name": "收束器",
+    "type": "muzzle",
+    "statsModifier": { "accuracy": 15, "range": 5 },
+    "description": "使霰弹更集中"
+  },
+  {
+    "id": "akm-long",
+    "name": "AKM长枪管",
+    "type": "barrel",
+    "statsModifier": { "damage": 3, "range": 15, "recoil": 5, "mobility": -5 },
+    "description": "增加伤害和射程，但降低机动性"
+  },
+  {
+    "id": "akm-short",
+    "name": "AKM短枪管",
+    "type": "barrel",
+    "statsModifier": { "damage": -2, "range": -10, "recoil": -5, "mobility": 10 },
+    "description": "提高机动性，适合近战"
+  },
+  {
+    "id": "m4-long",
+    "name": "M4长枪管",
+    "type": "barrel",
+    "statsModifier": { "range": 12, "accuracy": 5, "mobility": -5 },
+    "description": "增加射程和精准度"
+  },
+  {
+    "id": "red-dot",
+    "name": "红点瞄准镜",
+    "type": "scope",
+    "statsModifier": { "accuracy": 8 },
+    "description": "视野开阔，适合近距离快速瞄准"
+  },
+  {
+    "id": "holo",
+    "name": "全息瞄准镜",
+    "type": "scope",
+    "statsModifier": { "accuracy": 12, "mobility": -2 },
+    "description": "更精准的瞄准，略微降低机动性"
+  },
+  {
+    "id": "acog-4x",
+    "name": "ACOG 4倍镜",
+    "type": "scope",
+    "statsModifier": { "accuracy": 20, "mobility": -5 },
+    "description": "中远距离作战首选"
+  },
+  {
+    "id": "scope-6x",
+    "name": "6倍瞄准镜",
+    "type": "scope",
+    "statsModifier": { "accuracy": 25, "mobility": -8, "recoil": 5 },
+    "description": "远距离精准射击"
+  },
+  {
+    "id": "scope-8x",
+    "name": "8倍狙击镜",
+    "type": "scope",
+    "statsModifier": { "accuracy": 35, "mobility": -10 },
+    "description": "狙击专用"
+  },
+  {
+    "id": "vertical-grip",
+    "name": "垂直握把",
+    "type": "grip",
+    "statsModifier": { "recoil": -10 },
+    "description": "降低垂直后坐力"
+  },
+  {
+    "id": "angled-grip",
+    "name": "斜角握把",
+    "type": "grip",
+    "statsModifier": { "recoil": -5, "mobility": 5 },
+    "description": "略微降低后坐力，提高机动性"
+  },
+  {
+    "id": "akm-stock-heavy",
+    "name": "AKM重型枪托",
+    "type": "stock",
+    "statsModifier": { "recoil": -15, "mobility": -8 },
+    "description": "大幅降低后坐力"
+  },
+  {
+    "id": "m4-stock-precision",
+    "name": "M4精密枪托",
+    "type": "stock",
+    "statsModifier": { "accuracy": 10, "recoil": -8 },
+    "description": "提高精准度和稳定性"
+  },
+  {
+    "id": "akm-mag-40",
+    "name": "AKM 40发弹匣",
+    "type": "magazine",
+    "statsModifier": { "magazineSize": 10, "reloadTime": 0.2, "mobility": -3 },
+    "description": "增加弹容量"
+  },
+  {
+    "id": "m4-mag-60",
+    "name": "M4 60发弹鼓",
+    "type": "magazine",
+    "statsModifier": { "magazineSize": 30, "reloadTime": 0.8, "mobility": -8 },
+    "description": "大幅增加弹容量，降低机动性"
+  },
+  {
+    "id": "laser-red",
+    "name": "红色激光指示器",
+    "type": "laser",
+    "statsModifier": { "accuracy": 5 },
+    "description": "腰射时提高精准度"
+  },
+  {
+    "id": "bipod",
+    "name": "两脚架",
+    "type": "grip",
+    "statsModifier": { "recoil": -25, "mobility": -10 },
+    "description": "趴下或架枪时大幅降低后坐力"
+  }
+]
