@@ -116,7 +116,7 @@ export default function QuestsPage({
             const isActive = currentType === tab.id;
             const count = typeCounts[tab.id as keyof typeof typeCounts];
             return (
-              <a
+              <Link
                 key={tab.id}
                 href={`/quests?type=${tab.id}`}
                 className={`px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 ${
@@ -127,7 +127,7 @@ export default function QuestsPage({
               >
                 {tab.label}
                 <span className="ml-1 text-xs opacity-70">({count})</span>
-              </a>
+              </Link>
             );
           })}
         </div>
