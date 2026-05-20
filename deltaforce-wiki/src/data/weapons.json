@@ -7,7 +7,7 @@
       "category": "assault-rifle",
       "caliber": "7.62x39mm",
       "description": "经典苏制突击步枪，威力强大但后坐力较高，适合中近距离作战。",
-      "imageUrl": "/images/weapons/ak-47.svg",
+      "imageUrl": "/images/weapons/ak-47.webp",
       "tier": "A",
       "unlockLevel": 1,
       "stats": {
@@ -68,7 +68,7 @@
       "category": "assault-rifle",
       "caliber": "5.56x45mm NATO",
       "description": "美军标准制式步枪，稳定性出色，适合各种作战环境。",
-      "imageUrl": "/images/weapons/m4a1.svg",
+      "imageUrl": "/images/weapons/m4a1.webp",
       "tier": "S",
       "unlockLevel": 5,
       "stats": {
@@ -130,7 +130,7 @@
       "category": "assault-rifle",
       "caliber": "5.56x45mm NATO",
       "description": "德国精密制造的突击步枪，继承了AR平台的优点并改进了可靠性。",
-      "imageUrl": "/images/weapons/hk416.svg",
+      "imageUrl": "/images/weapons/hk416.webp",
       "tier": "S",
       "unlockLevel": 15,
       "stats": {
@@ -190,7 +190,7 @@
       "category": "assault-rifle",
       "caliber": "5.56x45mm NATO",
       "description": "比利时FN公司制造的模块化突击步枪，以其卓越的可靠性和精度著称。",
-      "imageUrl": "/images/weapons/scar-l.svg",
+      "imageUrl": "/images/weapons/scar-l.webp",
       "tier": "A",
       "unlockLevel": 20,
       "stats": {
@@ -249,7 +249,7 @@
       "category": "smg",
       "caliber": "9x19mm",
       "description": "传奇的德国冲锋枪，以其精确度和可靠性成为全球特种部队的首选。",
-      "imageUrl": "/images/weapons/mp5.svg",
+      "imageUrl": "/images/weapons/mp5.webp",
       "tier": "A",
       "unlockLevel": 3,
       "stats": {
@@ -306,7 +306,7 @@
       "category": "smg",
       "caliber": ".45 ACP",
       "description": "采用独特后坐力系统的冲锋枪，射速极快，近战爆发力惊人。",
-      "imageUrl": "/images/weapons/vector.svg",
+      "imageUrl": "/images/weapons/vector.webp",
       "tier": "S",
       "unlockLevel": 18,
       "stats": {
@@ -361,7 +361,7 @@
       "category": "smg",
       "caliber": "5.7x28mm",
       "description": "比利时FN公司制造的独特冲锋枪，采用顶置弹匣设计，穿甲能力出色。",
-      "imageUrl": "/images/weapons/p90.svg",
+      "imageUrl": "/images/weapons/p90.webp",
       "tier": "B",
       "unlockLevel": 12,
       "stats": {
@@ -403,7 +403,7 @@
       "category": "sniper",
       "caliber": ".338 Lapua Magnum",
       "description": "英国精密国际公司制造的传奇狙击步枪，以极致精度和威力著称。",
-      "imageUrl": "/images/weapons/awm.svg",
+      "imageUrl": "/images/weapons/awm.webp",
       "tier": "S",
       "unlockLevel": 25,
       "stats": {
@@ -453,7 +453,7 @@
       "category": "sniper",
       "caliber": "7.62x51mm NATO",
       "description": "美军标准狙击武器系统，基于雷明顿700步枪改进而来，精度极高。",
-      "imageUrl": "/images/weapons/m24.svg",
+      "imageUrl": "/images/weapons/m24.webp",
       "tier": "A",
       "unlockLevel": 10,
       "stats": {
@@ -497,7 +497,7 @@
       "category": "shotgun",
       "caliber": "12 Gauge",
       "description": "传奇泵动式霰弹枪，坚固耐用，在近距离能造成毁灭性打击。",
-      "imageUrl": "/images/weapons/m870.svg",
+      "imageUrl": "/images/weapons/m870.webp",
       "tier": "B",
       "unlockLevel": 1,
       "stats": {
@@ -583,7 +583,7 @@
       "category": "pistol",
       "caliber": "9x19mm",
       "description": "奥地利制造的全自动手枪，射速惊人，是副武器中的火力担当。",
-      "imageUrl": "/images/weapons/glock-18.svg",
+      "imageUrl": "/images/weapons/glock-18.webp",
       "tier": "A",
       "unlockLevel": 8,
       "stats": {
@@ -624,7 +624,7 @@
       "category": "lmg",
       "caliber": "5.56x45mm NATO",
       "description": "美军班用自动武器，弹链供弹提供持续火力压制能力。",
-      "imageUrl": "/images/weapons/m249.svg",
+      "imageUrl": "/images/weapons/m249.webp",
       "tier": "B",
       "unlockLevel": 22,
       "stats": {
@@ -669,7 +669,7 @@
       "category": "dmr",
       "caliber": "7.62x51mm NATO",
       "description": "基于M14步枪改进的精确射手步枪，在精准度和火力之间取得完美平衡。",
-      "imageUrl": "/images/weapons/mk14.svg",
+      "imageUrl": "/images/weapons/mk14.webp",
       "tier": "A",
       "unlockLevel": 30,
       "stats": {

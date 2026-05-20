@@ -1,47 +1,45 @@
 /**
- * 更新数据文件中的 imageUrl 路径，从 .webp 改为 .svg
+ * 更新数据文件中的 imageUrl，优先使用 .webp（真实图），fallback 到 .svg
  */
 const fs = require('fs');
 const path = require('path');
 
 const DATA_DIR = path.join(__dirname, '..', 'deltaforce-wiki', 'src', 'data');
+const PUBLIC_DIR = path.join(__dirname, '..', 'deltaforce-wiki', 'public', 'images');
 
-function updateFile(filename, key) {
+function getImagePath(category, id) {
+  // 优先 webp
+  if (fs.existsSync(path.join(PUBLIC_DIR, category, `${id}.webp`))) {
+    return `/images/${category}/${id}.webp`;
+  }
+  // fallback svg
+  if (fs.existsSync(path.join(PUBLIC_DIR, category, `${id}.svg`))) {
+    return `/images/${category}/${id}.svg`;
+  }
+  return `/images/${category}/${id}.webp`;
+}
+
+function updateFile(filename, key, category) {
   const filepath = path.join(DATA_DIR, filename);
   const data = JSON.parse(fs.readFileSync(filepath, 'utf8'));
-  
   const items = data[key];
-  if (!items) {
-    console.log(`  跳过 ${filename}：没有 ${key} 字段`);
-    return;
-  }
+  if (!items) return;
 
   let count = 0;
   for (const item of items) {
-    if (item.imageUrl && item.imageUrl.endsWith('.webp')) {
-      item.imageUrl = item.imageUrl.replace('.webp', '.svg');
+    const newPath = getImagePath(category, item.id);
+    if (item.imageUrl !== newPath) {
+      item.imageUrl = newPath;
       count++;
-    }
-    // 处理地图的 mapImageUrl
-    if (item.mapImageUrl && item.mapImageUrl.endsWith('.webp')) {
-      item.mapImageUrl = item.mapImageUrl.replace('.webp', '.svg');
-    }
-    // 处理干员技能图片
-    if (item.skills) {
-      for (const skill of item.skills) {
-        if (skill.imageUrl && skill.imageUrl.endsWith('.webp')) {
-          skill.imageUrl = skill.imageUrl.replace('.webp', '.svg');
-        }
-      }
     }
   }
 
   fs.writeFileSync(filepath, JSON.stringify(data, null, 2), 'utf8');
-  console.log(`  ${filename}: 更新了 ${count} 条 imageUrl`);
+  console.log(`${filename}: updated ${count} paths`);
 }
 
-console.log('更新 imageUrl 路径 (.webp -> .svg):\n');
-updateFile('weapons.json', 'weapons');
-updateFile('maps.json', 'maps');
-updateFile('operators.json', 'operators');
-console.log('\n完成');
+console.log('Updating image paths to use real images where available:\n');
+updateFile('weapons.json', 'weapons', 'weapons');
+updateFile('maps.json', 'maps', 'maps');
+updateFile('operators.json', 'operators', 'operators');
+console.log('\nDone');
