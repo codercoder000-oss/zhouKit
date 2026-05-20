@@ -12,6 +12,10 @@ function getImagePath(category, id) {
   if (fs.existsSync(path.join(PUBLIC_DIR, category, `${id}.webp`))) {
     return `/images/${category}/${id}.webp`;
   }
+  // 然后 jpg
+  if (fs.existsSync(path.join(PUBLIC_DIR, category, `${id}.jpg`))) {
+    return `/images/${category}/${id}.jpg`;
+  }
   // fallback svg
   if (fs.existsSync(path.join(PUBLIC_DIR, category, `${id}.svg`))) {
     return `/images/${category}/${id}.svg`;

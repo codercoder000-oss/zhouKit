@@ -7,7 +7,7 @@
       "role": "assault",
       "description": "前特种作战部队成员，擅长正面突破和近距离作战。红狼以无情的攻击风格和卓越的生存能力闻名。",
       "backstory": "红狼曾服役于著名的'猎鹰'特种作战大队，在多次反恐行动中建立功勋。退役后加入了三角洲行动，以其标志性的红色战术装备和狼一般的战斗直觉成为突击干员中的佼佼者。",
-      "imageUrl": "/images/operators/assault-001.svg",
+      "imageUrl": "/images/operators/assault-001.jpg",
       "skills": [
         {
           "id": "skill-rw-1",
@@ -61,7 +61,7 @@
       "role": "assault",
       "description": "隐秘行动专家，擅长渗透和暗杀。幽灵能够在敌人毫无察觉的情况下完成任务目标。",
       "backstory": "幽灵的真实身份成谜，据传曾是某国情报机构的顶级特工。他精通各种隐秘渗透技术，是执行斩首行动和情报收集任务的不二人选。",
-      "imageUrl": "/images/operators/assault-002.svg",
+      "imageUrl": "/images/operators/assault-002.jpg",
       "skills": [
         {
           "id": "skill-ph-1",
@@ -115,7 +115,7 @@
       "role": "recon",
       "description": "精英狙击手，拥有超凡的观察力和精准射击能力。鹰眼能够为团队提供至关重要的战场情报。",
       "backstory": "鹰眼是前奥林匹克射击冠军，后服役于侦察部队。他的视力经过特殊训练，能够在极端环境下发现常人无法察觉的细节。",
-      "imageUrl": "/images/operators/recon-001.svg",
+      "imageUrl": "/images/operators/recon-001.jpg",
       "skills": [
         {
           "id": "skill-he-1",
@@ -169,7 +169,7 @@
       "role": "recon",
       "description": "无人机操作专家，利用高科技装备进行战场侦察和干扰。蜂鸟是现代信息战的专家。",
       "backstory": "蜂鸟是前空军无人机飞行员，拥有数千小时的飞行经验。她开发的微型战术无人机系统彻底改变了小队级别的侦察方式。",
-      "imageUrl": "/images/operators/recon-002.svg",
+      "imageUrl": "/images/operators/recon-002.jpg",
       "skills": [
         {
           "id": "skill-hb-1",
@@ -223,7 +223,7 @@
       "role": "support",
       "description": "医疗专家，在战场上挽救无数生命。战地天使是团队生存的关键保障。",
       "backstory": "战地天使曾是国际红十字会医疗队的成员，在多个战区提供人道主义医疗援助。加入三角洲行动后，她将医疗技能与战术训练相结合。",
-      "imageUrl": "/images/operators/support-001.svg",
+      "imageUrl": "/images/operators/support-001.jpg",
       "skills": [
         {
           "id": "skill-ca-1",
@@ -277,7 +277,7 @@
       "role": "support",
       "description": "防御专家，使用重型护盾和护甲强化装置保护队友。铁幕是不可逾越的防线。",
       "backstory": "铁幕曾是重型机械化部队的装甲兵，对防护战术有深刻理解。他开发的便携式护盾发生器为小队作战带来了革命性的防御手段。",
-      "imageUrl": "/images/operators/support-002.svg",
+      "imageUrl": "/images/operators/support-002.jpg",
       "skills": [
         {
           "id": "skill-ic-1",
@@ -331,7 +331,7 @@
       "role": "engineer",
       "description": "技术天才，精通各种战术装置的设计与部署。工匠的创造力能解决任何战场难题。",
       "backstory": "工匠是前军工企业的首席设计师，参与过多种先进武器系统的研发。他携带的自制装备展现了工程学在战场上的无限可能。",
-      "imageUrl": "/images/operators/engineer-001.svg",
+      "imageUrl": "/images/operators/engineer-001.jpg",
       "skills": [
         {
           "id": "skill-ar-1",
@@ -385,7 +385,7 @@
       "role": "engineer",
       "description": "爆炸物专家，擅长使用各类爆炸装置进行区域控制。爆破手让敌人无处遁形。",
       "backstory": "爆破手曾在工兵部队服役，参与过数百次拆弹和爆破任务。他对爆炸物有着近乎艺术般的掌控力，每一次爆炸都经过精密计算。",
-      "imageUrl": "/images/operators/engineer-002.svg",
+      "imageUrl": "/images/operators/engineer-002.jpg",
       "skills": [
         {
           "id": "skill-de-1",
