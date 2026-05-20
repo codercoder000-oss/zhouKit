@@ -5,6 +5,9 @@
 import { useState, type ReactNode } from "react";
 import { cn } from "@/lib/utils";
 
+// [优化] basePath 前缀（和 next.config.ts 保持一致）
+const BASE_PATH = "/zhouKit";
+
 // [优化] 占位主题 - 不同类别用不同渐变
 export type EntityType = "weapon" | "map" | "operator" | "quest" | "guide" | "skill";
 
@@ -107,7 +110,7 @@ export function EntityImage({
       {!errored && src && (
         // eslint-disable-next-line @next/next/no-img-element
         <img
-          src={src}
+          src={`${BASE_PATH}${src}`}
           alt={alt}
           loading="lazy"
           onError={() => setErrored(true)}
